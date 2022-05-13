@@ -13,10 +13,12 @@ Python Library used in this code.
 ## Setup Script using Crontab on macOS
 1. Create a throwaway gmail account which Yagmail will use to send alert email to your real email address. After you create, navigate to Manage Google Account > Security > Less Secure App Access. Enable this setting. 
 2. Download and install Python version 3.8 or higher, This is due to an issue with keyring you will encounter with older version of Python
-3. Download "main.py"
-4. Place the main.py in a directory you want to run from. 
-5. Open terminal and navigate to the directory with main.py
-6. Create venv by running the following command where <dir> is the directory path to the main.py:
+3. Download the chromedriver that matches the version of Chrome browser you have installed on the computer. https://chromedriver.chromium.org/downloads
+4. 
+5. Download "main.py"
+6. Place the main.py in a directory you want to run from. 
+7. Open terminal and navigate to the directory with main.py
+8. Create venv by running the following command where <dir> is the directory path to the main.py:
 ```
 python3.10 -m venv /<dir>/venv
 ```
