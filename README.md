@@ -11,7 +11,7 @@ Python Library used in this code.
 
 
 ## Setup Script using Crontab on macOS
-1. Create a throwaway gmail account which Yagmail will use to send alert email to your real email address. After you create, navigate to Manage Google Account > Security > Less Secure App Access. Enable this setting. 
+1. Create a throwaway gmail account which Yagmail will use to send alert emails to your real email address. After you create, navigate to Manage Google Account > Security > Less Secure App Access. Enable this setting. 
 2. Download and install Python version 3.8 or higher, This is due to an issue with keyring you will encounter with older version of Python
 3. Download the chromedriver that matches the version of Chrome browser you have installed on the computer. https://chromedriver.chromium.org/downloads
 4. Create a symbolic link to the Chromedriver in /usr/local/bin/. I recommend running the driver at least once since macOS will most likely block them.
@@ -45,8 +45,8 @@ yamail.register('username', 'password')
 ```
 13. Use a text editor and edit send_email_alert() function. 
   Replace 'fromemail@gmail.com' portion with your sending email. 
-  Replace 'toemail@gmail.com' protion with recepient email. If you have second one replace 'toemail2@gmail.com'. Otherwise, you can remove the list bracket. 
-14. Setup crontab job to run every 15 minutes. Make sure to add source command before running so that it would enble the venv.
+  Replace 'toemail@gmail.com' protion with recepient email. If you have a second email adress to send the alert, replace 'toemail2@gmail.com'. Otherwise, you can remove the list bracket. 
+14. Setup a crontab job to run every 15 minutes. Make sure to add source command before running so that it would enble the venv.
 ```
   crontab -e
 ```
