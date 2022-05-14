@@ -1,4 +1,4 @@
-# Find Formula
+# Formula availability status alert from manufacture website.
 
 This repo is an example of how I setup an automated alert to find my baby his formulas. The code is hardcoded with https://abbottstores.com and Similac Sensitive version of Pro and Total Care 360 product family, looking for 32oz only. You will need to adjust the Selenium part of the code using XPATH or CSS-selector to identify the correct item on the webpage. Use this as an example and make adjust to your baby's favorite formulas. 
 If you need to find the status of out of order product, you can take the similar approach show here. If you want to learn more about Selenium, I recommend taking this Udemy course: https://www.udemy.com/course/elegant-browser-automation-with-python-and-selenium/
