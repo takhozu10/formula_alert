@@ -57,6 +57,6 @@ yamail.register('username', 'password')
 ```
 15. Lastly, you will need to add cron to allow Full Disk access. This can be done by going to System Preferences > Security & Privacy > Privacy > Full Disk Access. Unlock by providing the admin access. Click the + icon, press Shift + Command + G to navigate to /usr/sbin/cron. Select cron and cron will be added to the Full Disk Access to peform the above task without any permissions issue. 
 
-FEATURE REQUESTs
+FEATURE REQUESTS
 - Add ability to check Walmart, Target for formula availability.
 - Add ability to check different brands. 
