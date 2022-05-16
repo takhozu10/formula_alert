@@ -52,7 +52,6 @@ yamail.register('username', 'password')
   crontab -e
 ```
 ```
-  SHELL=/bin/zsh
   PATH=/usr/local/bin
   */15 * * * * /usr/bin/env bash -c 'cd /<dir>/ && source /<dir>/venv/bin/activate && python ./main.py
 ```
