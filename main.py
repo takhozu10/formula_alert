@@ -4,6 +4,11 @@ from selenium.webdriver.common.action_chains import ActionChains
 import keyring
 import yagmail
 
+chrome_options = webdriver.ChromeOptions()
+chrome_options.add_argument('--headless')
+chrome_options.add_argument('--window-size=1920,1080')
+chrome_options.add_argument('--incognito')
+
 
 def formula_stock_status(product_fam):
     '''
@@ -12,7 +17,7 @@ def formula_stock_status(product_fam):
     :param product_fam: Specify product family. Example: Similac 360 Total Care, Similac Pro-Advance
     :return: return stock status. Example: "IN STOCK" "OUT OF STOCK"
     '''
-    browser = webdriver.Chrome()
+    browser = webdriver.Chrome(options=chrome_options)
     browser.get("https://abbottstore.com/")
     browser.implicitly_wait(10)
     similac_menu_path = "//*[text()= 'Similac']"
