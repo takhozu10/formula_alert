@@ -53,6 +53,7 @@ yamail.register('username', 'password')
 ```
 ```
   SHELL=/bin/zsh
+  PATH=/usr/local/bin
   */15 * * * * /usr/bin/env bash -c 'cd /<dir>/ && source /<dir>/venv/bin/activate && python ./main.py
 ```
 15. Lastly, you will need to add cron to allow Full Disk access. This can be done by going to System Preferences > Security & Privacy > Privacy > Full Disk Access. Unlock by providing the admin access. Click the + icon, press Shift + Command + G to navigate to /usr/sbin/cron. Select cron and cron will be added to the Full Disk Access to peform the above task without any permissions issue. 
